@@ -136,9 +136,6 @@ class OrderServiceTest {
         @Test
         @DisplayName("주문을 삭제한다")
         void deleteOrder_ShouldDeleteOrder() {
-            // given
-            when(orderRepository.existsById(1L)).thenReturn(true);
-
             // when
             orderService.deleteOrder(1L);
 
